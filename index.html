@@ -1,1 +1,59 @@
+<!DOCTYPE html>
 
+<style>
+.center-div{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    height: 150px;
+}
+
+.button{
+    width: 150px;
+    margin: 5px;
+    background-color: #8097ff;
+    border: none;
+    color: white;
+    padding: 7px 30px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #8097ff;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+
+<div class="center-div" style="text-align: center">
+    <button class="button"><span>About</span></button>
+    <button class="button"><span>Resume</span></button>
+    <button class="button"><span>Portfolio</span></button>
+</div>
