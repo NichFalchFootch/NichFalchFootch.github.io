@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 
 <style>
+
+.out-div {
+    width: 100%;
+    height: 100%;
+}
+
 .center-div{
     position: absolute;
     margin: auto;
@@ -52,16 +58,23 @@
 }
 
 #grad {
-    width: 1000px;
-    height: 1000px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color: red; /* For browsers that do not support gradients */
     background-image: linear-gradient(to bottom right, #43ff32 , #32ffdd,  #3258ff); /* Standard syntax (must be last) */
 }
+
+
 </style>
-<div id="grad">
-    <div class="center-div" style="text-align: center">
-        <button class="button"><span>About</span></button>
-        <button class="button"><span>Resume</span></button>
-        <button class="button"><span>Portfolio</span></button>
+<body>
+    <div class="out-div" id="grad">
+        <div class="center-div" style="text-align: center">
+            <button class="button"><span>About</span></button>
+            <button class="button"><span>Resume</span></button>
+            <button class="button"><span>Portfolio</span></button>
+        </div>
     </div>
-</div>
+</body>
