@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+<!--Code for sliding menu-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
@@ -55,21 +56,52 @@
                 right: 35px;
             }
         }
+
     </style>
 </head>
 <body>
-
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
             <a href="https://nichfalchfootch.github.io/Home.html">Home</a>
-            <a href="https://nichfalchfootch.github.io/Resume.html">Resume</a>
             <a href="https://nichfalchfootch.github.io/Portfolio.html">Portfolio</a>
+            <a href="https://nichfalchfootch.github.io/Projects.html">Projects</a>
+            <a href="https://nichfalchfootch.github.io/Resume.html">Resume</a>
         </div>
     </div>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<div class="top-Bar">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+<!--Main Content-->
+<style>
+    .top-Bar{
+        background: grey;
+        margin: 0px 0px;
+        top: 0;
+        width: 100%;
+        height: 35px;
+        opacity: .5;
+    }
+    .main{
+        background: grey;
+        margin: 100px 200px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 500px;
+        height: 450px;
+        opacity: 1;
+    }
+</style>
 
+<div class="main">
+    hello
+</div>
+
+
+<!--Script-->
 <script>
 function openNav() {
   document.getElementById("myNav").style.width = "25%";
