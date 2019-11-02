@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<style>
+/*Sets the background, Gradient, Buttons, Button Animation*/
+/*Sets body*/
+body{
+    width: 100%;
+    height: 95%;
+    background-image: url("BackgroundFlag.png");
+}
+
+.out-div {
+    width: 100%;
+    height: 100%;
+}
+
+.center-div{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    height: 150px;
+    opacity: 1;
+}
+/*Sets button*/
+.button{
+    width: 150px;
+    margin: 5px;
+    background-color: #012a32;
+    border: none;
+    color: white;
+    padding: 7px 30px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    /*border: 2px solid #00e6bf; */
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/*Sets button animation*/
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*Sets gradient*/
+#grad {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .7;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right,#04a0c7,#93ddf5);
+}
+
+</style>
+<body>
+<!--Used for Gradient-->
+    <div class="out-div" id="grad">
+    <!--Centers Buttons-->
+        <div class="center-div" style="text-align: center">
+        <!--Sets up buttons-->
+            <a href="https://nichfalchfootch.github.io/About.html"><button class="button"><span>About</span></button></a>
+            <a href="https://nichfalchfootch.github.io/Resume.html"><button class="button"><span>Resume</span></button></a>
+            <a href="https://nichfalchfootch.github.io/Portfolio.html"><button class="button"><span>Portfolio</span></button></a>
+        </div>
+    </div>
+</body>
