@@ -1,163 +1,56 @@
 <!DOCTYPE html>
-<head>
-<!--Code for sliding menu-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: 'Lato', sans-serif;
-            background: 
-            background-image: url("aboutBackground.jpg");
-            background-repeat: no-repeat;
 
-        }
+<style>
+    .body{
+        background-image: linear-gradient(to bottom right,#04a0c7,#93ddf5);
+    }
+    .main{
+        margin: 0 0;
+        width: 100%;
+        height: 100%;
+    }
+    .info{
+        margin: 10% 20%;
+        width: 80%;
+    }
+    .border{
+        border-bottom-style: solid;
+        font-size: 30px;
+    }
+    #grad {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .7;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: url("aboutBackground.jpg")
+}
 
-        .overlay {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: rgb(0,0,0);
-            background-color: rgba(0,0,0, 0.9);
-            overflow-x: hidden;
-            transition: 0.5s;
-        }
+</style>
 
-        .overlay-content {
-            position: relative;
-            top: 25%;
-            width: 100%;
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        .overlay a {
-            padding: 8px;
-            text-decoration: none;
-            font-size: 36px;
-            color: #818181;
-            display: block;
-            transition: 0.3s;
-        }
-
-        .overlay a:hover, .overlay a:focus {
-            color: #f1f1f1;
-        }
-
-        .overlay .closebtn {
-            position: absolute;
-            top: 20px;
-            right: 45px;
-            font-size: 60px;
-        }
-
-        @media screen and (max-height: 450px) {
-            .overlay a {font-size: 20px}
-            .overlay .closebtn {
-                font-size: 40px;
-                top: 15px;
-                right: 35px;
-            }
-        }
-
-    </style>
-    <style>
-        .top-Bar{
-            background: grey;
-            margin: 0px 0px;
-            top: 0;
-            width: 100%;
-            height: 35px;
-            opacity: .5;
-        }
-        .main{
-            color: black;
-            margin: 5% 30%;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            width: 60%;
-            opacity: 1;
-        }
-        .border{
-            border-bottom-style: solid;
-        }
-        .test{
-            background: grey;
-        }
-
-        .skills{
-            background: rgba(77, 77, 77, 0.5);
-            border-radius: 5px;
-        }
-
-    </style>
-</head>
-<body>
-    <div>
-
-    </div>
-
-        <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-                <a href="https://nichfalchfootch.github.io/Home.html">Home</a>
-                <a href="https://nichfalchfootch.github.io/Portfolio.html">Portfolio</a>
-                <a href="https://nichfalchfootch.github.io/Projects.html">Projects</a>
-                <a href="https://nichfalchfootch.github.io/Resume.html">Resume</a>
-            </div>
-        </div>
-
-    <div class="top-Bar" style="font-size:25px">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-        <!--About Me-->
-        About Me
-    </div>
-<!--Main Content-->
-    <div class="main">
-        <p class="border" style="font-size:30px">Personal</p>
-        <p style="font-size: 20px">Hi, My Name Is Nicholas Falcon. I am a 17 year old senior attending Palm Desert High School. I am working towards graduating Palm Desert High School and looking to enlist in the United States Military. When i'm not working on school work, I am an Explorer with the Riverside County Sheriff's Department helping out the community. At home, I like to chill and play video games with my friends </p>
-        <p class="border" style="font-size:30px">Hobbies</p>
-            <li style="font-size: 20px">Filming</li>
-            <li style="font-size: 20px">Cooking</li>
-            <li style="font-size: 20px">Programming</li>
-            <li style="font-size: 20px">Airsofting</li>
-            <li style="font-size: 20px">Biking</li>
-
-
-        <div>
-            <p class="border" style="font-size:30px">Skills</p>
-            <!--Skills-->
+<body class="body">
+    <div class="main" id="grad">
+        <div class="info">
             <div>
-                <div style="width: 85%; float: left;"><p class="skills">After Effects</p></div><div style=";float: left;"><p>85%</p></div>
-                <div style="width: 95%; float: left;"><p class="skills">Scuba Diving</p></div><div style=";float: left;"><p>95%</p></div>
-                <div style="width: 90%; float: left;"><p class="skills">Java Programming</p></div><div style=";float: left;"><p>90%</p></div>
-                <div style="width: 78%; float: left;"><p class="skills">C# Programming</p></div><div style=";float: left;"><p>78%</p></div>
-                <div style="width: 87%; float: left;"><p class="skills">C++ Programming</p></div><div style=";float: left;"><p>87%</p></div>
-                <div style="width: 64%; float: left;"><p class="skills">HTML Programming</p></div><div style=";float: left;"><p>64%</p></div>
-                <div style="width: 58%; float: left;"><p class="skills">CSS Programming</p></div><div style=";float: left;"><p>58%</p></div>
-                <div style="width: 52%; float: left;"><p class="skills">Javascript Programming</p></div><div style=";float: left;"><p>52%</p></div>
-                <div style="width: 78%; float: left;"><p class="skills" >Swift Programming</p></div><div style=";float: left;"><p>78%</p></div>
-                <div style="width: 86%; float: left;"><p class="skills" >Andriod Studio Programming</p></div><div style=";float: left;"><p>86%</p></div>
+                <p class="border">Personal</p>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+            <div>
+                <p class="border">Hobbies</p>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+            <div>
+                <p class="border">Skills</p>
+                <ul>
+                    
+                </ul>
             </div>
         </div>
-
-
-
-
     </div>
-<!--Script-->
-<script>
-function openNav() {
-  document.getElementById("myNav").style.width = "25%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-</script>
-
 </body>
-</html>
