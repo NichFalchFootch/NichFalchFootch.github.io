@@ -11,22 +11,24 @@
             background-repeat: no-repeat;
         }
         .main-text{
-            margin: 40% 70%;
+            width: 30%;
+            float: right;
+            text-align: center;
         }
         .second-text{
-            margin: 40% 0%;
-            position: absolute;
+            width: 70%;
+            float: left;
         }
     </style>
 
 </head>
 <body>
     <div>
-        <div class="second-text" style=" float: left;">
+        <div>
             <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
         </div>
         <div class="main-text" style=" float: right;">
-            hello fjkdslajkldsajflk
+            <button></button>
         </div>
     </div>
 </body>
@@ -37,11 +39,12 @@
         opacity:0;
     }
     .console-container {
+        width: 70%;
+        float: left;
         font-family:Khula;
         font-size:4em;
         text-align:center;
         height:200px;
-        width:600px;
         display:block;
         position:absolute;
         color:white;
@@ -49,7 +52,6 @@
         bottom:0;
         left:0;
         right:0;
-        margin:auto;
     }
     .console-underscore {
         display:inline-block;
